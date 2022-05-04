@@ -25,8 +25,7 @@ public class MyMastermind {
 
     void mastermindSetup() {
         boolean userCodeSet = false;
-        boolean userAttemptsSet = false;
-        while (!userCodeSet && !userAttemptsSet) {
+        while (!userCodeSet) {
             System.out.println("Type -c to set the secret code (must be of length 4 with integers between 0 & 7)");
             System.out.println("Type -t to set the number of attempts");
             System.out.println("Type -ct to set both");
@@ -37,7 +36,6 @@ public class MyMastermind {
             if(userChoice.equals("-start")){
                 generateSecretNumber();
                 userCodeSet = true;
-                userAttemptsSet = true;
             }
 
             if (userChoice.equals( "-ct")) {
@@ -55,7 +53,6 @@ public class MyMastermind {
                         System.out.println("set the number of attempts!");
                         reference.setNumberOfAttempts(Integer.parseInt(getUserInput()));
                         hasUserInputtedAttempts = true;
-                        userAttemptsSet = true;
                     }
                     hasUserInputted = true;
                 }
@@ -66,7 +63,6 @@ public class MyMastermind {
                 while(!hasUserInputted) {
                     reference.setSecretNumberArray(convertToArray());
                     userCodeSet = true;
-                    userAttemptsSet = true;
                     hasUserInputted = true;
                 }
             }
@@ -77,7 +73,6 @@ public class MyMastermind {
                 while(!hasUserInputted) {
                     reference.setNumberOfAttempts(Integer.parseInt(getUserInput()));
                     userCodeSet = true;
-                    userAttemptsSet = true;
                     hasUserInputted = true;
                 }
             }
@@ -88,7 +83,7 @@ public class MyMastermind {
      * reference setter getter
      */
 
-    public class GameStartUpValues {
+    public static class GameStartUpValues {
         private int numberOfAttempts = 10;
         private int[] secretNumberArray;
 

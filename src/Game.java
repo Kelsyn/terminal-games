@@ -26,7 +26,7 @@ public class Game {
                 isAnInput = true;
             } catch (Exception e) {
                 System.out.println("Wrong Input!");
-                return null;
+                throw new RuntimeException(e);
             }
         }
         return userInputtedResponse;
