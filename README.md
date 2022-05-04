@@ -22,7 +22,7 @@ After each turn the player will be prompted with a message indicating the:
 - Right Number Wrong Digit placed
 - The number of guesses the player has used
 
-### Installation
+## Installation
 
 Clone using the following command:
 
@@ -32,7 +32,7 @@ Build the game using:
 
 javac Game.java
 
-### Playing The Game
+## Playing The Game
 
 Run the game by using:
 
@@ -40,15 +40,17 @@ java Game
 
 You will be asked for the following inputs:
 
-"-m": will select the Mastermind game.
+- "-m": will select the Mastermind game.
+
+## Mastermind
 
 Aftwards the following prompts will let you set either the secret code to be guessed for, the number of attempts, both, or to start with a randomly generated code and number of attempts set to 10.
 
-"-c": to set the secret code (must be of length 4 with integers between 0 & 7).
-"-t": to set the number of attempts.
-"-ct": to set both
-"-start": to start the game with a randomly generated code & 10 attempts.
+- "-c": to set the secret code (must be of length 4 with integers between 0 & 7).
+- "-t": to set the number of attempts.
+- "-ct": to set both
+- "-start": to start the game with a randomly generated code & 10 attempts.
 
-Playing the game:
+### Playing Mastermind:
 Enter into the terminal a 4 digit code with integers between 0 & 7 and enjoy!
 
