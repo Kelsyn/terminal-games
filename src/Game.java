@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 public class Game {
     public static void main(String[] args) {
         if(gameSelection().equals("-m")) {
-            myMastermind game = new myMastermind();
+            MyMastermind game = new MyMastermind();
             game.mastermindSetup();
             try {
                 game.runMastermind();

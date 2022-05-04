@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 
 
-public class myMastermind {
+public class MyMastermind {
     int count = 0;
     GameStartUpValues reference = new GameStartUpValues();
 
