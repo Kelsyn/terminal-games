@@ -22,21 +22,21 @@ After each turn the player will be prompted with a message indicating the:
 - Right Number Wrong Digit placed
 - The number of guesses the player has used
 
-## Installation
+## Running
 
 Clone using the following command:
 
-git clone https://github.com/Kelsyn/terminal-games
+`git clone https://github.com/Kelsyn/terminal-games`
 
 Build the game using:
 
-javac Game.java
-
+`javac /src/Game.java`
+  
 ## Playing The Game
 
 Run the game by using:
 
-java Game
+`java Game`
 
 You will be asked for the following inputs:
 
